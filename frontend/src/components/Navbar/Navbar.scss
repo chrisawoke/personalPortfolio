@@ -1,6 +1,6 @@
 .app__navbar {
   width: 100%;
-  margin: 0 auto;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,7 +61,7 @@
       text-transform: uppercase;
       font-weight: 500;
 
-      transition: all 0.3s ease;
+      transition: all 0.3s ease-in-out;
 
       &:hover {
         color: var(--secondary-color);
@@ -156,9 +156,6 @@
           color: var(--secondary-color);
         }
       }
-    }
-    @media screen and (min-width: 900px) {
-      display: none;
     }
   }
   @media screen and (min-width: 900px) {
