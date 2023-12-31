@@ -1,11 +1,12 @@
 #home {
   position: relative;
   background: url("../../assets/bgIMG.png");
-  background-repeat: repeat;
   background-size: cover;
   background-position: center;
+  background-repeat: repeat;
 
-  .app__header {
+  // disable the default padding styles
+  .app__wrapper {
     padding: 0;
 
     .copyright {
@@ -15,14 +16,14 @@
 }
 
 .app__header {
-  float: 1;
+  flex: 1;
   width: 100%;
   height: 100%;
   flex-direction: row;
 
-  padding: 6rem 2rem 0;
+  padding: 6rem 2rem 0rem;
 
-  @media secreen and (min-width: 2000px) {
+  @media screen and (min-width: 2000px) {
     padding-top: 8rem;
   }
 
@@ -43,7 +44,9 @@
   align-items: flex-start;
   height: 100%;
 
-  @media screen and (max-width: 200px) {
+  margin: 0 2rem;
+
+  @media screen and (max-width: 1200px) {
     width: 100%;
     margin-right: 0rem;
   }
@@ -52,19 +55,19 @@
 .app__header-badge {
   width: 100%;
   display: flex;
-  align-items: flex-end;
   justify-content: flex-end;
+  align-items: flex-end;
   flex-direction: column;
 
   .badge-cmp,
   .tag-cmp {
     padding: 1rem 2rem;
-    border: var(--white-color);
+    background: var(--white-color);
     border-radius: 15px;
     flex-direction: row;
     width: auto;
 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
 
   .tag-cmp {
@@ -107,13 +110,16 @@
     border-radius: 50%;
 
     background: var(--white-color);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 
     img {
       width: 60%;
       height: 60%;
     }
   }
+
+  // circles with different height & width
+
   div:nth-child(1) {
     width: 100px;
     height: 100px;
@@ -131,17 +137,17 @@
   }
 
   @media screen and (min-width: 2000px) {
-    div:nth-child(1) {
+    div:nth-child(2) {
       width: 400px;
       height: 400px;
     }
 
-    div:nth-child(2) {
+    div:nth-child(3) {
       width: 170px;
       height: 170px;
     }
 
-    div:nth-child(3) {
+    div:nth-child(1) {
       width: 200px;
       height: 200px;
     }
