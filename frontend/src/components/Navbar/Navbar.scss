@@ -75,12 +75,13 @@
       }
     }
   }
-
+  // Mobile and others smaller devices
   @media screen and (max-width: 900px) {
     display: none;
   }
 }
 
+// For mobile devices
 .app__navbar-menu {
   width: 35px;
   height: 35px;
