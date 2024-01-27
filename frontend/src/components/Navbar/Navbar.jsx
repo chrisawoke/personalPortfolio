@@ -22,6 +22,8 @@ const Navbar = () => {
         ))}
       </ul>
 
+      {/* Navbar for Mobile */}
+
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
